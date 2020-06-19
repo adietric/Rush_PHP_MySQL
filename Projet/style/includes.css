@@ -1,0 +1,236 @@
+body {
+    font-family: open sans, sans-serif;
+    background-color: #faf8fe;
+    z-index: 1;
+}
+.account {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: black;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+}
+
+.account a:link{
+    color:white;
+}
+
+header {
+    z-index: 400;
+}
+.con-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 40px;
+}
+
+.con-head div {
+    display: flex;
+}
+
+.con-head p {
+    margin: 0;
+}
+.head {
+    background-image: url(https://images.unsplash.com/photo-1416432969026-7e41a751ee1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1780&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 998;
+}
+
+.head h1 {
+    text-align: center;
+    color: white;
+    font-size: 4em;
+    padding-top: 4vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.head a:link {
+    text-decoration: none;
+}
+
+.bar {
+    width: 100%;
+    height: 5vh;
+    position: fixed;
+    top: 300px;
+    background-color: #292727;
+}
+
+#nav_bar ul {
+    list-style: none;
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    z-index: 999;
+}
+
+#nav_bar ul a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 5vh;
+    padding: 0 15px;
+    opacity: 1;
+}
+
+#nav_bar ul li {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#nav_bar ul li.current-menu-item {
+    background: darkgrey;
+}
+
+#nav_bar ul li:hover {
+    background: grey;
+}
+
+#nav_bar ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #292727;
+    padding: 0;
+}
+
+#nav_bar ul ul li {
+    float: none;
+    width: 200px;
+}
+
+#nav_bar ul ul a {
+    line-height: 120%;
+    padding: 10px 15px;
+}
+
+#nav_bar ul ul ul {
+    top: 0;
+    left: 100%;
+}
+
+#nav_bar ul li:hover>ul {
+    display: block;
+}
+
+.wrapper {
+    width: 705px;
+    margin: 330px auto;
+    padding: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+.items {
+    display: block;
+    margin: 20px 0;
+}
+
+.item {
+    background-color: #fff;
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 205px;
+    padding: 10px;
+    height: 310px;
+}
+
+.item img {
+    display: block;
+    width: 155px;
+    margin: auto;
+    padding: 10px;
+}
+
+.item p {
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+    padding: 7px 0px 10px 0px;
+    font-size: 0.9em;
+    line-height: 0.7em;
+}
+
+h2 {
+    font-size: 12px;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    margin: 0 0 10px 0;
+    padding: 0 0 5px 0;
+}
+
+button {
+    border: 1px solid #292727;
+    padding: 4px 14px;
+    background-color: #fff;
+    color: #292727;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    margin: auto;
+    position: static;
+}
+
+span {
+    float: right;
+}
+
+.quantity {
+    display: flexbox;
+    flex-direction: row;
+    justify-items: space-between;
+    margin: auto;
+}
+
+.quantity-field {
+    background-color: #ccc;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 0.625rem;
+    padding: 2px;
+    width: 3.75rem;
+    width: 15%;
+}
+
+.shopping-cart {
+    background: url('http://cdn1.iconfinder.com/data/icons/jigsoar-icons/24/_cart.png') no-repeat 0 0;
+    width: 24px;
+    height: 24px;
+    margin: auto;
+}
+
+.footer {
+    background-color: #292727;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer h4 {
+    color: whitesmoke;
+    opacity: 0.8;
+}

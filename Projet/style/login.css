@@ -1,0 +1,107 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    min-width: 420px;
+    background-image: url(https://images.unsplash.com/photo-1416432969026-7e41a751ee1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1780&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+h2 {
+    display: block;
+    margin: 20px;
+    color: #292727;
+    text-align: center;
+    font-size: 3em;
+}
+
+form {
+    padding: 10px 15px;
+    width: 360px;
+    background: whitesmoke;
+    border: 2px solid #292727;
+}
+
+div {
+    display: block;
+    text-align: left;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+a {
+    display: block;
+    color: #292727;
+    opacity: .7;
+    font-size: .8em;
+}
+
+label {
+    display: inline-block;
+    margin: 2px 0px;
+    width: 100%;
+    color: white;
+    font-size: .8em;
+    opacity: .7;
+    transform: scale(0);
+    transform-origin: top left;
+}
+
+label.active {
+    transform: scale(1);
+}
+
+input {
+    display: block;
+    padding: 7px 5px;
+    width: 85%;
+    outline: none;
+    background: #aaa;
+    border: white;
+    margin-inline: auto;
+}
+
+input[type="submit"] {
+    margin: 20px 0px 30px;
+    width: 123px;
+    background: #292727;
+    color: white;
+    cursor: pointer;
+    margin-inline: auto;
+}
+
+input[type="text"]:invalid:focus,
+input[type="password"]:invalid:focus {
+    background: grey;
+}
+
+input[type="text"]:valid:focus,
+input[type="text"]:valid,
+input[type="password"]:valid,
+input[type="password"]:valid:focus {
+    background: #aaa;
+    color: white;
+}
+
+input::placeholder {
+    color: #292727;
+}
+
+::-webkit-input-placeholder {
+    color: #aaa;
+    opacity: .7;
+}
+
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
