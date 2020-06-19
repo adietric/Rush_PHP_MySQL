@@ -8,3 +8,9 @@
 - [x] Des catégories et produits associés
 - [x] Une vue principale
 - [x] Une section administration
+
+![](./Gif/install.gif)
+![](./Gif/database.gif)
+![](./Gif/newUser.gif)
+![](./Gif/panier.gif)
+![](./Gif/root.gif)
